@@ -8,7 +8,7 @@ const ingredients = [
   'Приправы',
 ];
 
-const ingridientsItems = ingredients.forEach((item) => {
+ingredients.forEach((item) => {
     const ingredientsList = document.querySelector('#ingredients');
     const ingridientsItem = document.createElement('li')
     ingridientsItem.textContent = item;
