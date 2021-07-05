@@ -19,7 +19,7 @@ const galleryList = document.querySelector('#gallery');
       const galleryElements = `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
       return galleryElements;
     });
-galleryList.insertAdjacentHTML('beforeend', galleryElementsToAdd);
+galleryList.insertAdjacentHTML('beforeend', galleryElementsToAdd.join(""));
 
 // images.map((image) => {
 //       const galleryElements = `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
