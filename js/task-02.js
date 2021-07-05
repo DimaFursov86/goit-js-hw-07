@@ -7,15 +7,21 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
-
-ingredients.forEach((item) => {
     const ingredientsList = document.querySelector('#ingredients');
-    const ingridientsItem = document.createElement('li')
+   
+const ingredientsListToAppend = ingredients.map((item) => {
+    const ingridientsItem = document.createElement('li');
     ingridientsItem.textContent = item;
-
-    return ingredientsList.append(ingridientsItem);
+    return ingridientsItem;
 
 });
-    
+   ingredientsList.append(...ingredientsListToAppend); 
 
+// ingredients.forEach((item) => {
+//     const ingredientsList = document.querySelector('#ingredients');
+//     const ingridientsItem = document.createElement('li')
+//     ingridientsItem.textContent = item;
 
+//     return ingredientsList.append(ingridientsItem);
+
+// });

@@ -15,13 +15,16 @@ const images = [
 
 const galleryList = document.querySelector('#gallery');
 
- images.map((image) => {
+ const galleryElementsToAdd = images.map((image) => {
       const galleryElements = `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
-      return galleryList.insertAdjacentHTML('beforeend', galleryElements);
+      return galleryElements;
     });
+galleryList.insertAdjacentHTML('beforeend', galleryElementsToAdd);
 
-
-
+// images.map((image) => {
+//       const galleryElements = `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
+//       return galleryList.insertAdjacentHTML('beforeend', galleryElements);
+//     });
      
 
 

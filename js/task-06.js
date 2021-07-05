@@ -7,10 +7,17 @@ function onInputValidation(event) {
     const inputLength = event.currentTarget.value.length;
    
     if (Number(datalength) === inputLength) {
-        (inputEl.classList.add("valid")) || (inputEl.className = "valid");
+        (inputEl.className = "valid");
       
     } 
-        else inputEl.classList.add("invalid") || (inputEl.className = "invalid");
+        else (inputEl.className = "invalid");
       
 };
 
+// if (Number(datalength) === inputLength) {
+//         (inputEl.classList.add("valid")) || (inputEl.className = "valid");
+      
+//     } 
+//         else inputEl.classList.add("invalid") || (inputEl.className = "invalid");
+      
+// };
